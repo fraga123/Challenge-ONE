@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script  type="text/javascript" src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="imagenes/encriptado-de-datos.png">
+    <title>Challenge Encriptador</title>
+</head>
+<body>
+    <div class="contenedorPrincipal">
+        <div class="contedorLogo">
+            <img class="logoImg" src="imagenes/Logo.png" alt="Logo de Alura">
+            <h1 class="tituloPrincipal">Encriptador de Mensajes</h1>
+        </div>
+        <div class="contenedorIzquierdo">
+            <!-- <input id="inputTexto" class="textoInput" type="text" autofocus placeholder="Ingrese el texto aquí" required> -->
+            <textarea  class="txtTexto"  id="txtTexto" cols="30" rows="20" autofocus placeholder="Ingrese el texto aquí" required ></textarea>
+        </div>
+        <div class="contenedorDerecho">
+            <img src="imagenes/Muñeco.png" alt="imagen del resultado" id="imagenMensaje">
+            <h1 id="tituloMensaje">Ningun mensaje fue encontrado</h1>
+            <textarea  id="textoResultado" cols="8" rows="80">Ingresa el texto que desee encriptar o desencriptar.</textarea>
+            <button id="btnCopiar" type="button" name="button" onclick="copy()">Copiar</button>
+        </div>
+        <div class="accionBotones">
+            <p class="textoAviso">⚠ Solo letras minúsculas y sin acentos</p>
+            <button type="button" id="btnEncriptar" onclick="encriptar()">Encriptar</button>
+            <button type="button" id="btnDesencriptar" onclick=desencriptar()>Desencriptar</button>
+        </div>
+    </div>
+</body>
+</html>
